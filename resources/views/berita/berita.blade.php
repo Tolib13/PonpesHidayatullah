@@ -17,7 +17,7 @@
                         <p class="mb-3 text-secondary">{{ $item->create_at }}</p>
                         <h4 class="fw-bold mb-3">{{ $item->judul }}</h4>
                         <p class="text-secondary">#pesantrenmodernHidayatullah</p>
-                        <a href="/detail/{{ $item->slug }}" class="text-decoration-none text-danger">Selengkapnya</a>
+                        <a href="/detail/{{ $item->slug }}" class="text-decoration-none text-success">Selengkapnya</a>
                     </div>
                 </div>
             </div>

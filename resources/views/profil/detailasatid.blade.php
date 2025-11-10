@@ -10,8 +10,8 @@
         <img src="{{ asset('assets/images/' .$profil['gambar']) }}" class="img-fluid" alt="{{ $profil['nama'] }}">
                     <div class="konten-berita">
                         <h4 class="fw-bold mb-3 mt-3">{{ $profil['nama'] }}</h4>
-                        <p class="text-secondary">Tempat Tanggal Lahir : {{ $profil['tanggal'] }}</p>
-                        <p class="text-secondary">{!! $profil['deskripsi'] !!}</p>
+                        <p class="text-black">Tempat Tanggal Lahir : {{ $profil['tanggal'] }}</p>
+                        <p class="text-black" style=" text-align: justify;">{!! $profil['deskripsi'] !!}</p>
                     </div>
     </div>
 </section>

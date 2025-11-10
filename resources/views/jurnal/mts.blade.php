@@ -5,7 +5,7 @@
 <section id="berita" style="margin-top: 100px;" class="py-5">
     <div class="container">
         <div class="header-berita text-center mb-4">
-            <h2 class="fw-bold">Jadwal Kegiatan Harian Santri MTS</h2>
+            <h2 class="fw-bold">Jadwal Kegiatan Harian Santri MTs</h2>
             <p>Pondok Pesantren Modern Hidayatullah</p>
         </div>
 

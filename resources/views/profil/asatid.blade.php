@@ -5,7 +5,7 @@
 <section id="asatid" style="margin-top: 100px;" class="py-5">
     <div class="container ">
         <div class="header-berita text-center">
-            <h2 class="fw-bold">Profil Asatid Pondok Pesantren Moden Hidayatullah</h2>
+            <h2 class="fw-bold ">Profil Asatid Pondok Pesantren Moden Hidayatullah</h2>
 
                 <div class="container mt-4">
     <h1>Profil Asatid </h1>
@@ -15,11 +15,11 @@
         <!-- Card 1 -->
         <div class="col">
             <div class="card h-100">
-                <img src="{{ asset('assets/images/il-berita-02.png') }}" class="card-img-top mx-auto" alt="Asatid 1">
+                <img src="{{ asset('assets/images/asatid4.jpg') }}" class="card-img-top mx-auto" alt="Asatid 1">
                 <div class="card-body">
-                    <h5 class="card-title">MIFTAKUL HUDA, S.Pd.</h5>
+                    <h5 class="card-title">MIFTAQUL HUDA, S.Pd.</h5>
                     <p class="card-text">Deskripsi singkat atau biodata singkat dari pendiri 1.</p>
-                    <a href="{{ route('profil.show', ['id' => 1]) }}" class="text-decoration-none text-danger">Selengkapnya</a>
+                    <a href="{{ route('profil.show', ['id' => 1]) }}" class="text-decoration-none text-success">Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -27,11 +27,11 @@
         <!-- Card 2 -->
         <div class="col">
             <div class="card h-100">
-                <img src="{{ asset('assets/images/il-berita-01.png') }}" class="card-img-top" alt="Asatid 2">
+                <img src="{{ asset('assets/images/asatid2.jpg') }}" class="card-img-top" alt="Asatid 2">
                 <div class="card-body">
                     <h5 class="card-title">ZAINAL QOMARI, S. Pd</h5>
-                    <p class="card-text">Deskripsi singkat atau biodata singkat dari pendiri 2.</p>
-                    <a href="{{ route('profil.show', ['id' => 2]) }}" class="text-decoration-none text-danger">Selengkapnya</a>
+                    <p class="card-text">Deskripsi dan biodata singkat dari ZAINAL QOMARI, S. Pd</p>
+                    <a href="{{ route('profil.show', ['id' => 2]) }}" class="text-decoration-none text-success">Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -39,69 +39,69 @@
         <!-- Card 3 -->
         <div class="col">
             <div class="card h-100">
-                <img src="{{ asset('assets/images/il-berita-01.png') }}" class="card-img-top" alt="Asatid 3">
+                <img src="{{ asset('assets/images/asatid3.jpg') }}" class="card-img-top" alt="Asatid 3">
                 <div class="card-body">
                     <h5 class="card-title">Dr. MOH. BADRUL MUNIR, S. Pd., M. Pd.</h5>
                     <p class="card-text">Deskripsi singkat atau biodata singkat dari pendiri 3.</p>
-                    <a href="{{ route('profil.show', ['id' => 3]) }}" class="text-decoration-none text-danger">Selengkapnya</a>
+                    <a href="{{ route('profil.show', ['id' => 3]) }}" class="text-decoration-none text-success">Selengkapnya</a>
                 </div>
             </div>
         </div>
 
-        <div class="col">
+        <!-- <div class="col">
             <div class="card h-100">
-                <img src="{{ asset('assets/images/il-berita-01.png') }}" class="card-img-top" alt="asatid 4">
+                <img src="{{ asset('assets/images/asatid4.jpg') }}" class="card-img-top" alt="asatid 4">
                 <div class="card-body">
                     <h5 class="card-title">TASDIQ HASIM</h5>
                     <p class="card-text">Deskripsi singkat atau biodata singkat dari pendiri 3.</p>
-                    <a href="{{ route('profil.show', ['id' => 4]) }}" class="text-decoration-none text-danger">Selengkapnya</a>
+                    <a href="{{ route('profil.show', ['id' => 4]) }}" class="text-decoration-none text-success">Selengkapnya</a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="col">
             <div class="card h-100">
-                <img src="{{ asset('assets/images/il-berita-01.png') }}" class="card-img-top" alt="asatid 5">
+                <img src="{{ asset('assets/images/asatid5.jpg') }}" class="card-img-top" alt="asatid 5">
                 <div class="card-body">
                     <h5 class="card-title">RISQY NASHIHUN AMIN</h5>
                     <p class="card-text">Deskripsi singkat atau biodata singkat dari pendiri 3.</p>
-                    <a href="{{ route('profil.show', ['id' => 5]) }}" class="text-decoration-none text-danger">Selengkapnya</a>
+                    <a href="{{ route('profil.show', ['id' => 5]) }}" class="text-decoration-none text-success">Selengkapnya</a>
                 </div>
             </div>
         </div>
 
-        <div class="col">
+        <!-- <div class="col">
             <div class="card h-100">
-                <img src="{{ asset('assets/images/il-berita-01.png') }}" class="card-img-top" alt="asatid 6">
+                <img src="{{ asset('assets/images/asatid6.jpg') }}" class="card-img-top" alt="asatid 6">
                 <div class="card-body">
                     <h5 class="card-title">MOH. FAHMI AWALUDIN, S.Pd., M.Pd. </h5>
                     <p class="card-text">Deskripsi singkat atau biodata singkat dari pendiri 3.</p>
-                    <a href="{{ route('profil.show', ['id' => 6]) }}" class="text-decoration-none text-danger">Selengkapnya</a>
+                    <a href="{{ route('profil.show', ['id' => 6]) }}" class="text-decoration-none text-success">Selengkapnya</a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="col">
             <div class="card h-100">
-                <img src="{{ asset('assets/images/il-berita-01.png') }}" class="card-img-top" alt="asatid 7">
+                <img src="{{ asset('assets/images/asatid1.jpg') }}" class="card-img-top" alt="asatid 7">
                 <div class="card-body">
                     <h5 class="card-title">KHOIRUL ANWAR, S.Pd.</h5>
                     <p class="card-text">Deskripsi singkat atau biodata singkat dari pendiri 3.</p>
-                    <a href="{{ route('profil.show', ['id' => 7]) }}" class="text-decoration-none text-danger">Selengkapnya</a>
+                    <a href="{{ route('profil.show', ['id' => 7]) }}" class="text-decoration-none text-success">Selengkapnya</a>
                 </div>
             </div>
         </div>
 
-        <div class="col">
+        <!-- <div class="col">
             <div class="card h-100">
-                <img src="{{ asset('assets/images/il-berita-01.png') }}" class="card-img-top" alt="asatid 8">
+                <img src="{{ asset('assets/images/asatid8.jpg') }}" class="card-img-top" alt="asatid 8">
                 <div class="card-body">
                     <h5 class="card-title">BINTI NURIYAH</h5>
                     <p class="card-text">Deskripsi singkat atau biodata singkat dari pendiri 3.</p>
-                    <a href="{{ route('profil.show', ['id' => 8]) }}" class="text-decoration-none text-danger">Selengkapnya</a>
+                    <a href="{{ route('profil.show', ['id' => 8]) }}" class="text-decoration-none text-success">Selengkapnya</a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
             </div>

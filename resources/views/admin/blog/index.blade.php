@@ -5,8 +5,8 @@
         <div class="container col-xxl-8">
             <h4 class="fw-bold mb-3">Halaman Blog Artikel</h4>
 
-            <a href="{{ route('blog.create') }}" class="btn btn-primary mb-3">Buat Artikel</a>
-            <a href="{{ route('dashboard') }}" class="btn btn-primary mb-3">Dashboard Admin</a>
+            <a href="{{ route('blog.create') }}" class="btn btn-success mb-3">Buat Artikel</a>
+            <a href="{{ route('dashboard') }}" class="btn btn-success mb-3">Dashboard Admin</a>
 
             <!-- Pesan Sukses -->
             @if (session()->has('success'))

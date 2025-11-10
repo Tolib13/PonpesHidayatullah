@@ -99,7 +99,7 @@ Blog::create([
         $artikel = Blog::find($id);
 
         if ($request->hasFile('image')){
-            $fileCheck = 'required|max:1000|mimes:jpg,jpeg,png,webp';
+            $fileCheck = 'required|max:3000|mimes:jpg,jpeg,png,webp';
         }else {
             $fileCheck = 'nullable';
         }

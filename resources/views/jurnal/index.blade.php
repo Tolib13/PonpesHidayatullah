@@ -92,7 +92,7 @@
                     <tr><td class="text-center">5</td><td>06.00 - 06.30</td><td>Sarapan</td></tr>
                     <tr><td class="text-center">6</td><td>06.30 - 10.00</td><td>Pembelajaran Formal di Lembaga MI</td></tr>
                     <tr><td class="text-center">7</td><td>10.00 - 11.30</td><td>Kegiatan Bebas</td></tr>
-                    <tr><td class="text-center">8</td><td>11.30 - 12.30</td><td>Persiapan Sholat Jum'at dan Sholat Dhuhur Berjama'ah</td></tr>
+                    <tr><td class="text-center">8</td><td>11.30 - 12.30</td><td>Sholat Dhuhur Berjama'ah</td></tr>
                     <tr><td class="text-center">9</td><td>12.30 - 13.00</td><td>Makan Siang</td></tr>
                     <tr><td class="text-center">10</td><td>13.00 - 15.00</td><td>Istirahat (Tidur)</td></tr>
                     <tr><td class="text-center">11</td><td>15.00 - 15.30</td><td>Bersih diri + Sholat Ashar Berjamaah</td></tr>

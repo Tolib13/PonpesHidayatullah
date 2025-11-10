@@ -7,11 +7,14 @@
         <div class="d-flex mb-3">
            <a href="/">Home</a> / <a href="/profil/pendiri">Pendiri</a> / Profile Pendiri
         </div>
-        <img src="{{ asset('assets/images/' .$profilpendiri['gambar']) }}" class="img-fluid" alt="{{ $profilpendiri['nama'] }}">
+        <div class="text-center">
+            <img src="{{ asset('assets/images/' .$profilpendiri['gambar']) }}" class="img-fluid " style="height: 500px; width: 500px; object-fit: cover; object-position: 38% 20%;" alt="{{ $profilpendiri['nama'] }}">
+            <h4 class="fw-bold mb-3 mt-3">{{ $profilpendiri['nama'] }}</h4>
+        </div>
                     <div class="konten-berita">
-                        <h4 class="fw-bold mb-3 mt-3">{{ $profilpendiri['nama'] }}</h4>
-                        <p class="text-secondary">Tempat Tanggal Lahir : {{ $profilpendiri['tanggal'] }}</p>
-                        <p class="text-secondary">{!! $profilpendiri['deskripsi'] !!}</p>
+                        
+                        <p class="text-black">Tempat Tanggal Lahir : {{ $profilpendiri['tanggal'] }}</p>
+                        <p class="text-black">{!! $profilpendiri['deskripsi'] !!}</p>
                     </div>
     </div>
 </section>

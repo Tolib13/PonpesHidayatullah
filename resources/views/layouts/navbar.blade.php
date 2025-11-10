@@ -12,6 +12,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/">Beranda</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/sejarah">Sejarah</a>
+        </li>
         <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Profil
@@ -23,11 +26,12 @@
   </ul>
 </li>
         <li class="nav-item">
+            <a class="nav-link" href="{{ route('kalam') }}">Kalam</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" href="/berita">Berita</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link active" href="#">Prestasi</a>
-        </li> -->
+        
         <li class="nav-item">
           <a class="nav-link active" href="/foto">Galleri</a>
         </li>
@@ -43,11 +47,11 @@
           <button type="submit" class="btn btn-dark">Logout</button>
         </form>
         @else
-        <a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20daftar" 
-   target="_blank" 
-   class="btn btn-gradient">
-    Daftar Sekarang
-</a>
+          <a href="https://wa.me/6281231464192?text=Halo%20Assalamualaikum%20saya%20ingin%20daftar" 
+            target="_blank" 
+            class="btn btn-gradient">
+            Daftar Sekarang
+          </a>
         @endauth
       </div>
     </div>

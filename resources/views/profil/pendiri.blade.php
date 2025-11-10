@@ -15,26 +15,15 @@
         <!-- Card 1 -->
         <div class="col">
             <div class="card h-100">
-                <img src="{{ asset('assets/images/il-berita-02.png') }}" class="card-img-top mx-auto" alt="Asatid 1">
+                <img src="{{ asset('assets/images/pendiri1.jpg') }}" class="card-img-top mx-auto" style=" object-fit: cover; object-position: 30% 20%;" alt="Asatid 1">
                 <div class="card-body">
                     <h5 class="card-title">KH. Drs. SUKRI ALFI, MM.</h5>
-                    <p class="card-text">Deskripsi singkat atau biodata singkat dari pendiri 1.</p>
-                    <a href="{{ route('profilpendiri.show', ['id' => 1]) }}" class="text-decoration-none text-danger">Selengkapnya</a>
+                    <p class="card-text">Biodata KH. Drs. SUKRI ALFI, MM.</p>
+                    <a href="{{ route('profilpendiri.show', ['id' => 1]) }}"
+                    class="text-decoration-none text-success">Selengkapnya</a>
                 </div>
             </div>
         </div>
-
-        <!-- Card 2
-         <div class="col">
-            <div class="card h-100">
-                <img src="{{ asset('assets/images/il-berita-02.png') }}" class="card-img-top mx-auto" alt="Asatid 1">
-                <div class="card-body">
-                    <h5 class="card-title">Nyai Hj. ULFA FIKRIA PUTRI, S. Ag., S. Farm., M. Farm. Klin., Apt.</h5>
-                    <p class="card-text">Deskripsi singkat atau biodata singkat dari pendiri 1.</p>
-                    <a href="{{ route('profilpengasuh.show', ['id' => 2]) }}" class="text-decoration-none text-danger">Selengkapnya</a>
-                </div>
-            </div>
-        </div> -->
 
     </div>
 </div>

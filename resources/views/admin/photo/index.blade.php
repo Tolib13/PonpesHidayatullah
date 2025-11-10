@@ -6,7 +6,7 @@
             <h4 class="fw-bold mb-3">Halaman Photo Kegiatan</h4>
 
             <a href="" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#uploadModal">Upload Photo</a>
-            <a href="{{ route('dashboard') }}" class="btn btn-primary mb-3">Dashboard Admin</a>
+            <a href="{{ route('dashboard') }}" class="btn btn-success mb-3">Dashboard Admin</a>
 
             <!-- Pesan Sukses -->
             @if (session()->has('success'))

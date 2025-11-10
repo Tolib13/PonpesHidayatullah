@@ -15,11 +15,11 @@
         <!-- Card 1 -->
         <div class="col">
             <div class="card h-100">
-                <img src="{{ asset('assets/images/il-berita-02.png') }}" class="card-img-top mx-auto" alt="Asatid 1">
+                <img src="{{ asset('assets/images/pengasuh1.jpg') }}" class="card-img-top mx-auto" alt="Asatid 1">
                 <div class="card-body">
                     <h5 class="card-title">KH. M ABD ROUF, Lc., Grad Dip., MA.</h5>
-                    <p class="card-text">Deskripsi singkat atau biodata singkat dari pendiri 1.</p>
-                    <a href="{{ route('profilpengasuh.show', ['id' => 1]) }}" class="text-decoration-none text-danger">Selengkapnya</a>
+                    <p style="text-align: justify;" class="card-text">KH. M. Abd. Rouf, Lc, MA. selanjutnya disebut Ustadz Abd. Rouf adalah seorang Kiai Muda dan cendekiawan muslim yang lahir di Blitar pada tanggal 3 Juli 1987. </p>
+                    <a href="{{ route('profilpengasuh.show', ['id' => 1]) }}" class="text-decoration-none text-success">Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -27,11 +27,11 @@
         <!-- Card 2 -->
          <div class="col">
             <div class="card h-100">
-                <img src="{{ asset('assets/images/il-berita-02.png') }}" class="card-img-top mx-auto" alt="Asatid 1">
+                <img src="{{ asset('assets/images/pengasuh2.jpg') }}" class="card-img-top mx-auto" alt="Asatid 1">
                 <div class="card-body">
                     <h5 class="card-title">Nyai Hj. ULFA FIKRIA PUTRI, S. Ag., S. Farm., M. Farm. Klin., Apt.</h5>
-                    <p class="card-text">Deskripsi singkat atau biodata singkat dari pendiri 1.</p>
-                    <a href="{{ route('profilpengasuh.show', ['id' => 2]) }}" class="text-decoration-none text-danger">Selengkapnya</a>
+                    <p class="card-text" style="text-align: justify;">Nyai Hj. Ulfa Fikria Putri, S. Ag., S. Farm., M. Farm. Klin., Apt. adalah seorang cendekiawan muslimah yang lahir di Kediri pada tanggal 12 Januari 1992. </p>
+                    <a href="{{ route('profilpengasuh.show', ['id' => 2]) }}" class="text-decoration-none text-success">Selengkapnya</a>
                 </div>
             </div>
         </div>

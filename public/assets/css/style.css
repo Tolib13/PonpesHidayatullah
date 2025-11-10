@@ -63,11 +63,11 @@ body {
             rgba(51, 68, 51, 0.4),
             rgba(51, 74, 51, 0.4)
         ),
-        url("../../assets/images/ppmhhero21.jpg");
+        url("../../assets/images/bgweb.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 20%;
-    height: 600px;
+    background-position: center 34%;
+    height: 690px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,6 +139,8 @@ body {
 .hero-text {
     font-size: 65px;
     font-weight: 600;
+    line-height: 1.2; /* biar jarak antar baris judul lebih rapat */
+    margin-bottom: 10px; /* atur jarak ke bawah (default biasanya besar) */
 }
 
 /* Responsif layar kecil 450 */
@@ -186,7 +188,7 @@ Responsif layar kecil 800 */
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
-    height: 500px;
+    min-height: 100vh;
     width: 100%;
     color: #ffffff;
     display: flex;
@@ -219,10 +221,14 @@ Responsif layar kecil 800 */
 
 .carousel-caption h5,
 .carousel-caption p {
-    background: linear-gradient(to right, gold, white);
-    -webkit-background-clip: text;
+    /* background: linear-gradient(to right, gold, white); */
+    /* text-shadow: 0 0 5px rgb(150, 222, 143), 0 0 10px rgb(148, 195, 155),
+        0 0 15px rgb(150, 222, 143); */
+    text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(17, 215, 47),
+        0 0 15px rgb(6, 10, 6);
+    /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
+    font-weight: bold; */
 }
 
 /* Box */
@@ -343,4 +349,552 @@ Responsif layar kecil 800 */
     color: #1f8a4b;
     text-decoration: underline;
     text-decoration-color: #1f8a4b;
+}
+
+/* Dropdown background dan shadow */
+.navbar .dropdown-menu {
+    background-color: #1f8a4b; /* hijau */
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Warna teks */
+.navbar .dropdown-item {
+    color: white;
+    transition: background 0.3s ease;
+}
+
+/* Hover item */
+.navbar .dropdown-item:hover {
+    background-color: #145f33; /* hijau lebih gelap */
+    color: #fff;
+}
+
+.navbar .dropdown-item {
+    position: relative;
+    padding-left: 20px;
+}
+
+.navbar .dropdown-item::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%) scaleY(0);
+    width: 3px;
+    height: 70%;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.navbar .dropdown-item:hover::before {
+    transform: translateY(-50%) scaleY(1);
+}
+
+.nav-link {
+    word-break: break-word; /* Memaksa teks panjang pindah baris */
+    white-space: normal; /* Supaya tidak maksa 1 baris */
+}
+
+.stat-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+.stat-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ukuran default (desktop) */
+.custom-caption h5 {
+    font-size: 1.5rem; /* lebih besar */
+}
+.custom-caption p {
+    font-size: 1rem;
+}
+
+/* Ukuran layar kecil (HP) */
+@media (max-width: 768px) {
+    .custom-caption h5 {
+        font-size: 1rem; /* kecil di HP */
+    }
+    .custom-caption p {
+        font-size: 0.8rem;
+    }
+}
+
+.brosur-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.brosur-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.brosur-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsif tambahan */
+@media (max-width: 768px) {
+    .brosur-title {
+        font-size: 14px;
+    }
+}
+
+.carousel-box {
+    width: 700px; /* atur ukuran kotak */
+    height: 500px; /* biar persegi */
+    margin: 0 auto; /* biar center */
+    overflow: hidden; /* rapikan */
+    border-radius: 15px; /* biar agak rounded */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* efek bayangan */
+}
+
+.carousel-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* potong gambar biar rapi */
+}
+
+#partnerCarousel .carousel-control-prev,
+#partnerCarousel .carousel-control-next {
+    width: 5%; /* perkecil area klik */
+}
+
+#partnerCarousel .carousel-control-prev {
+    left: 30%; /* geser lebih dekat ke gambar */
+}
+
+#partnerCarousel .carousel-control-next {
+    right: 30%; /* geser lebih dekat ke gambar */
+}
+
+/* Sejarah */
+
+/* Judul Section */
+.section-title {
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #198754; /* hijau elegan */
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 5px;
+}
+
+/* Card Sejarah & Misi */
+.sejarah-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.sejarah-card:hover {
+    transform: translateY(-5px);
+}
+
+/* List Cantik */
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+.custom-list li {
+    padding: 8px 0;
+    padding-left: 30px;
+    position: relative;
+}
+.custom-list li::before {
+    content: "✔";
+    color: #198754;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+/* Responsif tambahan */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.6rem;
+    }
+    .custom-list li {
+        font-size: 0.95rem;
+    }
+}
+
+.sejarah-section {
+    position: relative;
+    background: linear-gradient(
+            rgba(162, 178, 162, 0.6),
+            /* hijau transparan */ rgba(0, 128, 0, 0.6)
+        ),
+        url("/assets/images/bgsejarah.jpg") no-repeat center center/cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.sejarah-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.sejarah-section .content {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.1); /* efek kaca tipis */
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sejarah */
+
+/* Section Sambutan */
+#sambutan {
+    background: #f8f9fa; /* abu-abu muda */
+}
+
+/* Card Sambutan */
+.sambutan-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+}
+
+/* Foto Pengasuh */
+.sambutan-foto {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border: 5px solid #198754; /* hijau */
+}
+
+/* Gambar sambutan */
+#sambutan {
+    background-image: url("../../assets/images/islami2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Teks Sambutan */
+.sambutan-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+}
+
+.sambutan-card h3 {
+    font-size: 1.8rem;
+}
+
+/* Section Kritik & Saran */
+#kritik-saran {
+    background: #f8f9fa; /* abu muda */
+}
+
+.kritik-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 700px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.kritik-card h3 {
+    font-size: 1.8rem;
+}
+
+.kritik-card .form-control {
+    border-radius: 10px;
+    padding: 12px;
+}
+
+/* Kritik */
+
+.form-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+input:focus,
+textarea:focus {
+    border-color: #198754; /* hijau Bootstrap */
+    box-shadow: 0 0 8px rgba(25, 135, 84, 0.5);
+    transition: 0.3s;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #198754, #28a745);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* Responsive additions: adjust sizes/layout for small screens without changing design */
+
+/* Extra small phones (<= 360px) */
+@media (max-width: 360px) {
+    /* Hero */
+    #hero {
+        padding: 40px 12px;
+        background-position: center 25%;
+        height: auto;
+        min-height: 420px;
+    }
+    .hero-title {
+        padding-top: 30px;
+    }
+    .hero-text {
+        font-size: 22px;
+        line-height: 1.15;
+        margin-bottom: 8px;
+    }
+    .hero-text-arab {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    /* Buttons */
+    .btn-danger,
+    .btn-outline-danger,
+    .btn-outline-success,
+    .btn-gradient,
+    .btn-submit {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+
+    /* Navbar */
+    .nav-item .nav-link,
+    .navbar .nav-link {
+        font-size: 14px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    /* Carousel / images */
+    .carousel-item img,
+    .carousel-box img {
+        height: 220px;
+    }
+    .carousel-box {
+        width: 100%;
+        height: 220px;
+        border-radius: 10px;
+    }
+
+    /* Sections and cards */
+    .sambutan-card,
+    .kritik-card,
+    .form-card {
+        padding: 18px;
+    }
+    .sambutan-foto {
+        width: 110px;
+        height: 110px;
+        border-width: 4px;
+    }
+    .sejarah-section {
+        padding: 30px 12px;
+    }
+    .sejarah-section h2 {
+        font-size: 1.5rem;
+    }
+    .sejarah-section .content {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+
+    /* Smaller text for tight spaces */
+    .custom-caption h5 {
+        font-size: 0.95rem;
+    }
+    .custom-caption p {
+        font-size: 0.78rem;
+    }
+    .brosur-title {
+        font-size: 12px;
+    }
+
+    /* Video / partner areas */
+    #video {
+        height: 220px;
+        background-position: center;
+    }
+    #fasilitas {
+        background-position: center;
+    }
+
+    /* Footer compact */
+    #footer {
+        padding: 20px 12px;
+    }
+}
+
+/* Small phones (~361px - 480px) */
+@media (min-width: 361px) and (max-width: 480px) {
+    #hero {
+        padding: 48px 14px;
+        min-height: 480px;
+        background-position: center 28%;
+    }
+    .hero-text {
+        font-size: 24px;
+    }
+    .hero-text-arab {
+        font-size: 19px;
+    }
+
+    .btn-danger,
+    .btn-outline-danger,
+    .btn-outline-success,
+    .btn-gradient,
+    .btn-submit {
+        padding: 9px 20px;
+        font-size: 14px;
+    }
+
+    .carousel-box {
+        height: 260px;
+    }
+    .carousel-item img {
+        height: 260px;
+    }
+
+    .sambutan-card,
+    .kritik-card,
+    .form-card {
+        padding: 22px;
+    }
+    .sambutan-foto {
+        width: 130px;
+        height: 130px;
+    }
+
+    .custom-caption h5 {
+        font-size: 1rem;
+    }
+    .custom-caption p {
+        font-size: 0.82rem;
+    }
+}
+
+/* Small tablets / large phones (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    #hero {
+        padding: 60px 18px;
+        min-height: 520px;
+        background-position: center 30%;
+    }
+    .hero-text {
+        font-size: 34px;
+    }
+    .hero-text-arab {
+        font-size: 22px;
+    }
+
+    .btn-danger,
+    .btn-outline-danger,
+    .btn-outline-success,
+    .btn-gradient,
+    .btn-submit {
+        padding: 10px 26px;
+        font-size: 15px;
+    }
+
+    .carousel-box {
+        width: 90%;
+        height: 340px;
+    }
+    .carousel-item img {
+        height: 340px;
+    }
+
+    .sambutan-card {
+        padding: 28px;
+    }
+    .sambutan-foto {
+        width: 160px;
+        height: 160px;
+    }
+
+    .sejarah-section {
+        padding: 50px 20px;
+    }
+    .sejarah-section h2 {
+        font-size: 2rem;
+    }
+    .sejarah-section .content {
+        font-size: 1rem;
+        max-width: 700px;
+    }
+}
+
+/* Utility tweaks to preserve layout and readability on any small viewport */
+@media (max-width: 768px) {
+    /* Avoid overly large hero shadows & animations on low-power devices */
+    .hero-text-arab {
+        text-shadow: 0 0 4px rgba(150, 222, 143, 0.9);
+    }
+    .hero-title {
+        padding-top: 20px;
+    }
+    .box-link:hover {
+        transform: translateY(-3px);
+    }
+
+    /* Allow nav links to wrap cleanly on narrow screens */
+    .nav-link {
+        font-size: 15px;
+        line-height: 1.1;
+    }
+
+    /* Make cards full-width in tight layouts */
+    .sambutan-card,
+    .kritik-card,
+    .form-card,
+    .brosur-card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Reduce image fixed heights so content isn't cropped too aggressively */
+    .carousel-item img,
+    .carousel-box img,
+    .carousel-box {
+        height: auto;
+    }
 }

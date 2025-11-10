@@ -46,6 +46,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
 
         <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
 
         
 
@@ -72,41 +74,56 @@
                             <li class="nav-item mb-2"><a href="/berita" class="nav-link p-0 ">Berita Pesantren</a></li>
                             <li class="nav-item mb-2"><a href="/profil/pendiri" class="nav-link p-0 ">Profil Pendiri Pondok Pesantren</a></li>
                             <li class="nav-item mb-2"><a href="/foto" class="nav-link p-0 ">Galeri Pesantren</a></li>
+                            <li class="nav-item mb-2"><a href="/pesertadidik" class="nav-link p-0 ">Peserta Didik</a></li>
                         </ul>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="/login" class="nav-link p-0 ">Admin </a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Info PSB</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Prestasi</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Vidio Kegiatan</a></li>
+                            <li class="nav-item mb-2"><a href="/kurikulum-pesantren" class="nav-link p-0 ">Kurikulum Pesantren</a></li>
+                            <li class="nav-item mb-2"><a href="/jurnal-kegiatan" class="nav-link p-0 ">Jurnal  Kegiatan</a></li>
+                            <!-- <li class="nav-item mb-2"><a href="/" class="nav-link p-0 ">Vidio Kegiatan</a></li> -->
                         </ul>
                     </div>
                 </div>
                 <!-- Kolom Kontak -->
                 <div class="col-12 col-md-2 mb-3">
                     <h5 class="fw-bold mb-3">Hubungi Kami</h5>
-                    <div class="d-flex mb-3 flex-wrap">
-                        <a href="" target="_blank" class="text-decoration-none text-dark me-2 mb-2">
-                            <img src="{{ asset('assets/icons/wawa.png') }}" height="30" width="30" alt="">
-                        </a>
-                        <a href="" target="_blank" class="text-decoration-none text-dark me-2 mb-2">
-                            <img src="{{ asset('assets/icons/gmaill.png') }}" height="30" width="30" alt="">
-                        </a>
-                        <a href="" target="_blank" class="text-decoration-none text-dark me-2 mb-2">
-                            <img src="{{ asset('assets/icons/igig.png') }}" height="30" width="30" alt="">
-                        </a>
-                        <a href="" target="_blank" class="text-decoration-none text-dark me-2 mb-2">
-                            <img src="{{ asset('assets/icons/ytyt.png') }}" height="30" width="30" alt="">
-                        </a>
-                    </div>
-                </div>
+                <div class="d-flex mb-3 flex-wrap">
+                <!-- WhatsApp -->
+                    <a href="https://wa.me/6281231464192?text=Halo%20saya%20ingin%20bertanya" 
+                    target="_blank" class="text-decoration-none text-dark me-2 mb-2">
+                    <img src="{{ asset('assets/icons/wawa.png') }}" height="30" width="30" alt="WhatsApp">
+                    </a>
+
+        <!-- Email -->
+            <a href="mailto:modernhidayatullahponpes@gmail.com" 
+            target="_blank" 
+            class="text-decoration-none text-dark me-2 mb-2">
+            <img src="{{ asset('assets/icons/gmaill.png') }}" height="30" width="30" alt="Email">
+            </a>
+
+        <!-- Instagram -->
+            <a href="https://instagram.com/ppm_hidayatullah" 
+            target="_blank" 
+            class="text-decoration-none text-dark me-2 mb-2">
+            <img src="{{ asset('assets/icons/igig.png') }}" height="30" width="30" alt="Instagram">
+            </a>
+
+        <!-- YouTube -->
+            <a href="https://www.youtube.com/@PonpesModernHidayatullah" 
+           target="_blank" 
+           class="text-decoration-none text-dark me-2 mb-2">
+            <img src="{{ asset('assets/icons/ytyt.png') }}" height="30" width="30" alt="YouTube">
+            </a>
+            </div>
+            </div>
+
                 <!-- kolom 3 -->
                 <div class="col-12 col-md-3 mb-3">
                     <h5 class="font-inter fw-bold mb-3">Kontak Kami</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">PonpesHidayatullah@gmail.com</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">+625-8292-84747</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">+628-7685-3482</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">#PonpesHidayatullahHebat</a></li>
+                        <li class="nav-item mb-2"><a href="mailto:modernhidayatullahponpes@gmail.com" class="nav-link p-0 ">modernhidayatullahponpes@gmail.com</a></li>
+                        <li class="nav-item mb-2"><a href="https://wa.me/6281231464192?text=Halo%20saya%20ingin%20bertanya" class="nav-link p-0 ">+62 812-3146-4192</a></li>
+                        <li class="nav-item mb-2"><a href="https://instagram.com/ppm_hidayatullah" class="nav-link p-0 ">@ppm_hidayatullah</a></li>
                     </ul>
                 </div>
                 <!-- Kolom  4 -->
@@ -116,13 +133,22 @@
         <a href="https://maps.app.goo.gl/xLGegs8cuEnrxm3FA"
            target="_blank"
            class="text-white text-decoration-none">
-           Jl. Kalimantan Nomer 67, Sananwetan, Kota Blitar
+           Jl. Kalimantan no 42, Kel. Sananwetan, Kec.Sananwetan, Kota Blitar, Jatim
         </a>
     </p>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126374.76347934078!2d112.10668742057933!3d-8.181451272977725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78ed006dfcffad%3A0x2da351d697034fc5!2sPondok%20Pesantren%20Modern%20Hidayatullah!5e0!3m2!1sid!2sid!4v1755659714831!5m2!1sid!2sid" 
+        width="220" 
+        height="160" 
+        style="border:0; border-radius:8px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
 </div>
 
 
-                <div class="container py-4">
+        <div class="container py-4">
         <div class="d-flex justify-content-between">
             <div>
                 Pesantren Hidayatullah &copy; 2025

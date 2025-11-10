@@ -4,10 +4,13 @@ use App\Http\Controllers\AppController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\KalamController;
+use App\Http\Controllers\KritikController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\ProfilpendiriController;
 use App\Http\Controllers\ProfilpengasuhController;
+use App\Http\Controllers\SejarahController;
 use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 
@@ -88,4 +91,20 @@ Route::get('/kurikulum-pesantren', [App\Http\Controllers\KurikulumController::cl
 Route::get('/jurnal-kegiatan', [App\Http\Controllers\JurnalController::class, 'index'])->name('jurnal.index');
 Route::get('/jurnal-mts', [App\Http\Controllers\MtsController::class, 'index'])->name('jurnal.mts');
 Route::get('/pesertadidik', [App\Http\Controllers\PesertaDidikController::class, 'index'])->name('pesertadidik.index');
+Route::get('/sejarah', [App\Http\Controllers\SejarahController::class, 'index'])->name('sejarah.index');
+
+Route::post('/kritik-saran', [KritikController::class, 'store'])->name('kritik.store');
+
+Route::get('/admin/kritik', [KritikController::class, 'index'])->name('admin.kritik.index');
+Route::delete('/admin/kritik/{id}', [KritikController::class, 'destroy'])->name('admin.kritik.destroy');
+
+// Halaman user (frontend)
+Route::get('/kalam', [\App\Http\Controllers\FrontendKalamController::class, 'index'])->name('kalam');
+Route::get('/kalam/{id}', [\App\Http\Controllers\FrontendKalamController::class, 'show'])->name('kalam.show');
+
+// Halaman admin (backend)
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::resource('kalam', \App\Http\Controllers\KalamController::class);
+});
+
 
